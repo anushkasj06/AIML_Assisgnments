@@ -2,7 +2,7 @@
 
 # Deep Learning & Neural Networks Projects
 
-This repository contains two comprehensive Deep Learning projects implemented in Python using Jupyter Notebooks. These projects demonstrate the application of Fundamental Neural Networks and Advanced Transfer Learning techniques to solve real-world classification problems.
+This repository contains three comprehensive Deep Learning projects implemented in Python using Jupyter Notebooks. These projects demonstrate the application of Fundamental Neural Networks, Advanced Transfer Learning, and Object Detection techniques to solve real-world problems.
 
 ## 📂 Repository Contents
 
@@ -10,6 +10,7 @@ This repository contains two comprehensive Deep Learning projects implemented in
 | :--- | :--- | :--- |
 | `1_NeuralNetworks.ipynb` | **AQI Classification** | A Neural Network implementation to classify Air Quality Index (AQI) as 'Good' or 'Bad' based on environmental features. |
 | `2_Transfer_Learning.ipynb` | **Brain Tumor Classification** | Leveraging pre-trained models (Transfer Learning) to detect and classify brain tumors from MRI scans. |
+| `YOLOv8_Object_Detection_Lab_Completed.ipynb` | **Object Detection & Multi-Object Classification** | A comprehensive lab implementing YOLOv8 for object detection, instance segmentation, and image classification tasks. |
 
 ---
 
@@ -60,6 +61,33 @@ This project implements **Transfer Learning** to enhance the classification of b
 
 ---
 
+## 🎯 Project 3: Object Detection & Multi-Object Classification with YOLOv8
+
+### Overview
+This project implements YOLOv8 for object detection, instance segmentation, and image classification. It covers training, evaluation, benchmarking, and deployment of YOLOv8 models on various tasks.
+
+### Key Features
+* **Object Detection:** Training and evaluating YOLOv8 detection models on datasets like COCO128.
+* **Instance Segmentation:** Using YOLOv8-seg for pixel-level object segmentation.
+* **Image Classification:** Leveraging YOLOv8-cls for top-k classification.
+* **Benchmarking:** Comparing different YOLOv8 variants (n, s, m) for speed and accuracy.
+* **Fine-Tuning:** Hyperparameter optimization and data augmentation.
+* **Export & Deployment:** Exporting models to ONNX and TorchScript for deployment.
+
+### Libraries Used
+* `ultralytics`
+* `roboflow`
+* `supervision`
+* `matplotlib`
+* `seaborn`
+* `pandas`
+* `numpy`
+* `opencv-python`
+* `pyyaml`
+* `pillow`
+
+---
+
 ## 👥 Contributors
 
 * **Anushka Sunil Jadhav**
@@ -78,7 +106,7 @@ This project implements **Transfer Learning** to enhance the classification of b
     * Ensure the required datasets are mounted (for the Brain Tumor project, the code expects data in Google Drive).
 3.  **Install Dependencies:**
     ```python
-    !pip install tensorflow numpy pandas matplotlib seaborn opencv-python
+    !pip install tensorflow numpy pandas matplotlib seaborn opencv-python ultralytics roboflow supervision pyyaml pillow
     ```
 
 ## 📜 License
