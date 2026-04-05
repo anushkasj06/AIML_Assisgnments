@@ -1,8 +1,8 @@
-﻿# AIML_Assisgnments
+# AIML_Assisgnments
 
-# Deep Learning & Neural Networks Projects
+# Deep Learning, Neural Networks & NLP Projects
 
-This repository contains three comprehensive Deep Learning projects implemented in Python using Jupyter Notebooks. These projects demonstrate the application of Fundamental Neural Networks, Advanced Transfer Learning, and Object Detection techniques to solve real-world problems.
+This repository contains four comprehensive AI/ML projects implemented in Python using Jupyter Notebooks. These projects demonstrate the application of Fundamental Neural Networks, Advanced Transfer Learning, Object Detection, and Natural Language Processing techniques to solve real-world problems.
 
 ## 📂 Repository Contents
 
@@ -11,6 +11,7 @@ This repository contains three comprehensive Deep Learning projects implemented 
 | `1_NeuralNetworks.ipynb` | **AQI Classification** | A Neural Network implementation to classify Air Quality Index (AQI) as 'Good' or 'Bad' based on environmental features. |
 | `2_Transfer_Learning.ipynb` | **Brain Tumor Classification** | Leveraging pre-trained models (Transfer Learning) to detect and classify brain tumors from MRI scans. |
 | `YOLOv8_Object_Detection_Lab_Completed.ipynb` | **Object Detection & Multi-Object Classification** | A comprehensive lab implementing YOLOv8 for object detection, instance segmentation, and image classification tasks. |
+| `4_NLP_Text_Classification.ipynb` | **NLP Preprocessing & Text Classification** | Implements NLP preprocessing techniques and machine learning models for text classification tasks. |
 
 ---
 
@@ -39,52 +40,85 @@ This project focuses on designing and deploying a Neural Network to predict Air 
 ## 🧠 Project 2: Transfer Learning for Brain Tumor Classification
 
 ### Overview
-This project implements **Transfer Learning** to enhance the classification of brain tumors from MRI images. It utilizes state-of-the-art pre-trained architectures to achieve high accuracy in distinguishing between tumor and non-tumor regions.
+This project implements **Transfer Learning** to enhance the classification of brain tumors from MRI images.
 
 ### Methodology
-1.  **Dataset Preparation:**
-    * Utilizes the **TCGA-LGG (Lower Grade Glioma)** dataset containing patient MRI scans and segmentation masks.
-    * Preprocessing involves image resizing, mask handling, and data augmentation.
-2.  **Model Architecture:**
-    * **Transfer Learning:** Fine-tuning pre-trained models such as **VGG16**, **ResNet50**, and **DenseNet121**.
-    * **Segmentation (Res-U-Net):** References to Res-U-Net for understanding tumor regions via image segmentation masks.
-3.  **Evaluation:**
-    * Comparative analysis of model performance.
-    * Exploratory Data Analysis (EDA) on patient demographics (Age, Gender, Tumor Location).
+1. **Dataset Preparation:**
+    * Utilizes the **TCGA-LGG dataset**
+    * Image preprocessing and augmentation
+2. **Model Architecture:**
+    * Fine-tuning **VGG16, ResNet50, DenseNet121**
+3. **Evaluation:**
+    * Model comparison
+    * EDA on patient demographics
 
 ### Libraries Used
-* `tensorflow` / `keras`
-* `cv2` (OpenCV)
-* `sklearn` (scikit-learn)
-* `PIL` (Pillow)
-* `matplotlib` & `seaborn`
+* `tensorflow`
+* `opencv`
+* `sklearn`
+* `PIL`
+* `matplotlib`
+* `seaborn`
 
 ---
 
 ## 🎯 Project 3: Object Detection & Multi-Object Classification with YOLOv8
 
 ### Overview
-This project implements YOLOv8 for object detection, instance segmentation, and image classification. It covers training, evaluation, benchmarking, and deployment of YOLOv8 models on various tasks.
+This project implements YOLOv8 for object detection, segmentation, and classification tasks.
 
 ### Key Features
-* **Object Detection:** Training and evaluating YOLOv8 detection models on datasets like COCO128.
-* **Instance Segmentation:** Using YOLOv8-seg for pixel-level object segmentation.
-* **Image Classification:** Leveraging YOLOv8-cls for top-k classification.
-* **Benchmarking:** Comparing different YOLOv8 variants (n, s, m) for speed and accuracy.
-* **Fine-Tuning:** Hyperparameter optimization and data augmentation.
-* **Export & Deployment:** Exporting models to ONNX and TorchScript for deployment.
+* Object Detection (COCO128)
+* Instance Segmentation
+* Image Classification
+* Benchmarking YOLOv8 variants
+* Model export (ONNX, TorchScript)
 
 ### Libraries Used
 * `ultralytics`
 * `roboflow`
 * `supervision`
-* `matplotlib`
-* `seaborn`
+* `opencv-python`
 * `pandas`
 * `numpy`
-* `opencv-python`
-* `pyyaml`
-* `pillow`
+
+---
+
+## 📝 Project 4: NLP Preprocessing & Text Classification
+
+### Overview
+This project focuses on building a complete **NLP pipeline** to preprocess textual data and classify it using machine learning algorithms.
+
+### Key Features
+* **Text Preprocessing**
+  * Tokenization  
+  * Stopword Removal  
+  * Stemming & Lemmatization  
+
+* **Vectorization Techniques**
+  * CountVectorizer  
+  * TF-IDF  
+
+* **Machine Learning Models**
+  * Naive Bayes  
+  * Logistic Regression  
+  * Support Vector Machine (SVM)  
+
+* **Evaluation Metrics**
+  * Accuracy  
+  * Precision, Recall, F1-score  
+  * Confusion Matrix  
+
+* **Analysis**
+  * Model comparison and performance insights  
+
+### Libraries Used
+* `nltk`
+* `sklearn`
+* `pandas`
+* `numpy`
+* `matplotlib`
+* `seaborn`
 
 ---
 
@@ -95,19 +129,10 @@ This project implements YOLOv8 for object detection, instance segmentation, and 
 * **Uday Sapate**
 * **Om Panchal**
 
+---
+
 ## 🚀 How to Run
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/anushkasj06/AIML_Assisgnments.git](https://github.com/anushkasj06/AIML_Assisgnments.git)
-    ```
-2.  **Open in Jupyter or Google Colab:**
-    * Upload the `.ipynb` files to [Google Colab](https://colab.research.google.com/).
-    * Ensure the required datasets are mounted (for the Brain Tumor project, the code expects data in Google Drive).
-3.  **Install Dependencies:**
-    ```python
-    !pip install tensorflow numpy pandas matplotlib seaborn opencv-python ultralytics roboflow supervision pyyaml pillow
-    ```
-
-## 📜 License
-This project is for educational and academic purposes.
+1. **Clone the repository:**
+```bash
+git clone https://github.com/anushkasj06/AIML_Assisgnments.git
