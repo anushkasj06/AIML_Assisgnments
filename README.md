@@ -61,8 +61,26 @@ This project implements **Transfer Learning** to enhance the classification of b
 * `matplotlib`
 * `seaborn`
 
----
 
+## 🔄 Assignment 6: Encoder-Decoder with BiLSTM
+
+### Overview
+This assignment implements an Encoder-Decoder architecture using Bidirectional LSTM (BiLSTM) for sequence-to-sequence tasks, such as text translation or sequence prediction. The project demonstrates how encoder-decoder models can learn to map input sequences to output sequences, a foundational concept in modern NLP.
+
+### Key Features
+* **Encoder-Decoder Architecture:** Utilizes BiLSTM layers for both encoding and decoding sequences.
+* **Sequence-to-Sequence Learning:** Handles variable-length input and output sequences.
+* **Attention Mechanism (if implemented):** Optionally includes attention for improved context handling.
+* **Evaluation:** Demonstrates model performance on relevant sequence tasks.
+
+### Libraries Used
+* `tensorflow` / `keras`
+* `numpy`
+* `pandas`
+* `matplotlib`
+* `seaborn`
+
+---
 ## 🎯 Project 3: Object Detection & Multi-Object Classification with YOLOv8
 
 ### Overview
