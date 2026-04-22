@@ -14,6 +14,8 @@ This repository contains five comprehensive AI/ML projects implemented in Python
 | `Assignment4_NLP_Text_Classification.ipynb` | **NLP Preprocessing & Text Classification** | Implements NLP preprocessing techniques and machine learning models for text classification tasks. |
 | `TextPrediction/` | **Next Word Prediction API** | An LSTM-based text prediction model deployed as a FastAPI web service for predicting the next word in a sequence. |
 
+| `ASSIGNMENT-6_Encoder_Decoder/` | **Encoder-Decoder with BiLSTM & Attention** | Implementation and analysis of Encoder-Decoder models (with and without attention) for sequence-to-sequence tasks, including a comparative study and insights from research. |
+
 ---
 
 ## 🧪 Project 1: Neural Networks Design and Deployment (AQI Classification)
@@ -64,14 +66,23 @@ This project implements **Transfer Learning** to enhance the classification of b
 
 ## 🔄 Assignment 6: Encoder-Decoder with BiLSTM
 
+
 ### Overview
-This assignment implements an Encoder-Decoder architecture using Bidirectional LSTM (BiLSTM) for sequence-to-sequence tasks, such as text translation or sequence prediction. The project demonstrates how encoder-decoder models can learn to map input sequences to output sequences, a foundational concept in modern NLP.
+This assignment explores the implementation and comparative analysis of Encoder-Decoder models, focusing on the impact of the attention mechanism for sequence-to-sequence tasks (such as translation or sequence prediction).
+
+### Assignment Details
+The notebook covers:
+1. A review of the research paper "Efficient Machine Translation with a BiLSTM-Attention Approach".
+2. A study of the official code implementation.
+3. A hands-on implementation comparing a baseline Encoder-Decoder model (without attention) against a model with an attention mechanism.
+4. Analysis of the results, highlighting the improvements brought by the attention mechanism.
+5. A conclusion summarizing the key findings and the importance of attention in modern NLP.
 
 ### Key Features
 * **Encoder-Decoder Architecture:** Utilizes BiLSTM layers for both encoding and decoding sequences.
+* **Attention Mechanism:** Comparative study of models with and without attention.
 * **Sequence-to-Sequence Learning:** Handles variable-length input and output sequences.
-* **Attention Mechanism (if implemented):** Optionally includes attention for improved context handling.
-* **Evaluation:** Demonstrates model performance on relevant sequence tasks.
+* **Result Analysis:** Highlights the improvements and insights from the attention mechanism.
 
 ### Libraries Used
 * `tensorflow` / `keras`
